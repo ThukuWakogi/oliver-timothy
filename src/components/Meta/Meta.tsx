@@ -37,8 +37,11 @@ const Meta = ({ title, description, metas = [] }: IMetaProps) => {
           },
           { name: 'description', content: getDescription() },
           { name: 'og:description', content: getDescription() },
-          { name: 'keywords', content: 'Information Technology, IT, React, Django, Tech Expert' },
-          // { property: 'og:image', content: 'https://www.pessafy.com/pessafy-logo.png' },
+          {
+            name: 'keywords',
+            content: 'Information Technology, IT, React, Django, Tech Expert, React Native',
+          },
+          { property: 'og:image', content: 'https://thukuwakogi.vercel.app/avant.jpg' },
         ],
         ...(metas as IMetaItemProps[]),
       ].map(props => (
