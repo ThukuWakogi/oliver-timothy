@@ -1,8 +1,8 @@
-import { Box, Typography } from '@mui/material';
-import { motion } from 'framer-motion';
+import { Box } from '@mui/material';
 import { NextPage } from 'next';
 import { Meta } from '../../components';
 import Banner from './Banner';
+import Links from './Links';
 
 const Home: NextPage = () => {
   return (
@@ -18,21 +18,7 @@ const Home: NextPage = () => {
         }}
       >
         <Banner />
-        <Typography
-          sx={{ pt: 12 }}
-          component={motion.p}
-          variants={{
-            initial: { opacity: [0] },
-            animate: {
-              opacity: [0, 0.8, 0],
-              transition: { repeat: Infinity, delay: 2, type: 'tween', duration: 4 },
-            },
-          }}
-          initial="initial"
-          animate="animate"
-        >
-          Coming soon...
-        </Typography>
+        <Links />
       </Box>
     </>
   );
