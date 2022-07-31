@@ -29,7 +29,7 @@ const Banner: FC = () => {
         animate="animate"
       >
         <Box sx={{ borderRadius: '100%', m: 1, overflow: 'hidden' }}>
-          <Image src="/avant.jpg" layout="responsive" width={100} height="100" priority />
+          <Image src="/avant.jpg" layout="responsive" width={100} height="100" priority alt="avant" />
         </Box>
       </Box>
       <Box sx={{ textAlign: 'center' }}>
